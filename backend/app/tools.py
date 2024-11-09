@@ -199,9 +199,13 @@ class DallE(BaseTool):
     )
 
 
-RETRIEVAL_DESCRIPTION = """Can be used to look up information that was uploaded to this assistant.
-If the user is referencing particular files, that is often a good hint that information may be here.
-If the user asks a vague question, they are likely meaning to look up info from this retriever, and you should call it!"""
+RETRIEVAL_DESCRIPTION = """
+This tool retrieves relevant content from the New York State Grades 3-8 English Language Arts (ELA) Test Archive, 
+which includes questions, answers, and grading guidelines. This retrieval is tailored to the specific grade level 
+of the student you’re currently assisting, ensuring the educational material aligns with their academic level. 
+If a student refers to past ELA content, needs help with reading comprehension, or requests practice questions, 
+use this tool to bring in contextually appropriate material from the test archive.
+"""
 
 
 def get_retriever(assistant_id: str, thread_id: str):
